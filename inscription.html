@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connexion - SalleLibre</title>
+  <meta name="description" content="Connectez-vous à SalleLibre.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <a class="login-logo" href="index.html">Salle<span>Libre</span></a>
+    <h2 class="login-title">Inscription</h2>
+    <p class="login-description">Connectez-vous pour accéder aux salles libres.</p>
+
+    <form class="login-form" id="login-form">
+      <div class="form-field">
+        <label for="first-name">Prénom</label>
+        <input id="first-name" name="firstName" type="text" autocomplete="given-name" maxlength="60" required>
+      </div>
+
+      <div class="form-field">
+        <label for="last-name">Nom</label>
+        <input id="last-name" name="lastName" type="text" autocomplete="family-name" maxlength="60" required>
+      </div>
+      <div class="form-field">
+        <label for="password">Mot de passe</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+      </div>
+      <button class="login-button" type="submit">S'inscrire</button>
+    </form>
+  </main>
+  
+</body>
+</html>

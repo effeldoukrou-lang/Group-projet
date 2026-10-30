@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site group</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+</head>
+<body>
+    <header class="navbar">
+      <h2>Salle<span>Libre</span></h2>
+      <a href="inscription.html"><button>Inscription</button></a>
+  </header>
+  <div class="contenu">
+      <aside class="sidebar" >
+        <a href="index.html"><i class="fa-solid fa-home"></i> Accueil</a>
+        <a href="sallelibre.html"><i class="fa-solid fa-house"></i> Salles Libres</a>
+        <a href="signaler.html"><i class="fa-solid fa-exclamation-triangle"></i> Signaler</a>
+        <a href="classement.html"><i class="fa-solid fa-trophy"></i> Classement</a>
+        <a href="historique.html"><i class="fa-solid fa-clock"></i> Historique</a>
+        <a href="profil.html"><i class="fa-solid fa-user"></i> Profil</a>
+      </aside>
+      <main class="page-content">
+      <h2><i class="fa-solid fa-exclamation-triangle"></i> Signaler une salle libre</h2>
+      <p class="page-description">Indiquez le campus, l'étage, la salle et les heures pendant lesquelles elle est libre.</p>
+      <section class="room-entry" aria-labelledby="room-entry-title">
+        <h2 id="room-entry-title">Informations de la salle</h2>
+        <form class="location-form" id="room-form">
+          <div class="form-field">
+            <label for="campus">Campus</label>
+            <select id="campus" name="campus" required>
+              <option value="" selected disabled>Choisir un campus</option>
+              <option value="bonoumin">Bonoumin</option>
+              <option value="corniche">Corniche</option>
+              <option value="zinsou">Zinsou</option>
+              <option value="bluethooth">Bluethooth</option>
+              <option value="siege">Siège</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="etage">Étage</label>
+            <select id="etage" name="etage" required>
+              <option value="" selected disabled>Choisir un étage</option>
+              <option value="sous-sol">Sous-sol</option>
+              <option value="rez-de-chaussee">Rez-de-chaussée</option>
+              <option value="1er-etage">1er étage</option>
+              <option value="2e-etage">2e étage</option>
+              <option value="3e-etage">3e étage</option>
+              <option value="4e-etage">4e étage</option>
+              <option value="5e-etage">5e étage</option>
+              <option value="autre">Autre niveau</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="room-name">Nom ou numéro de la salle</label>
+            <input id="room-name" name="roomName" type="text" placeholder="Ex. Salle 12 ou B-204" maxlength="60" required>
+          </div>
+          <div class="form-field">
+            <label for="available-from">Libre à partir de</label>
+            <input id="available-from" name="availableFrom" type="time" required>
+          </div>
+          <div class="form-field">
+            <label for="available-until">Libre jusqu'à</label>
+            <input id="available-until" name="availableUntil" type="time" required>
+          </div>
+          <button class="add-room-button" type="submit">Enregistrer le signalement</button>
+        </form>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+  </div>
+   <footer class="footer">
+          <p> 2026 NOTRE PROJETS - Abidjan, Côte d'Ivoire</p>
+          <div class="liens">
+            <a><strong>CHEICK KHALIL</strong>: classement et pied de page,</a>
+            <a><strong>JOJO</strong>: page signaler et tout les étages,</a>
+            <a><strong>ELIE</strong>: mon profil</a>
+          </div>
+        </footer>
+</body>
+</html>
